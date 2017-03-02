@@ -1,0 +1,100 @@
+{\rtf1\ansi\ansicpg936\cocoartf1504
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 PingFangSC-Regular;\f2\fnil\fcharset0 MicrosoftYaHei;
+\f3\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red38\green38\blue38;\red255\green255\blue255;
+\red0\green0\blue0;\red246\green246\blue246;\red210\green0\blue53;\red115\green0\blue2;\red109\green109\blue109;
+\red11\green84\blue83;\red83\green83\blue83;\red228\green235\blue240;\red67\green67\blue67;\red255\green255\blue255;
+\red212\green29\blue40;}
+{\*\expandedcolortbl;\csgray\c100000;\csgray\c100000;\cssrgb\c20000\c20000\c20000;\cssrgb\c100000\c100000\c100000;
+\cssrgb\c0\c0\c0;\cssrgb\c97255\c97255\c97255;\cssrgb\c86667\c6667\c26667;\cssrgb\c53333\c0\c0;\cssrgb\c50196\c50196\c50196\c4706;
+\cssrgb\c0\c40000\c40000;\cssrgb\c40000\c40000\c40000;\cssrgb\c91373\c93725\c95294;\cssrgb\c33333\c33333\c33333;\cssrgb\c100000\c100000\c100000;
+\cssrgb\c87451\c20392\c20392;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww13220\viewh14400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 docker 
+\f1 images \'be\'b5\'cf\'f1\
+	\'c3\'fc\'c1\'ee\'a3\'badocker search \'be\'b5\'cf\'f1\'c3\'fb \'b2\'e9\'d1\'af\'b2\'d6\'bf\'e2\'d6\'d0\'d3\'d0\'b5\'c4\'be\'b5\'cf\'f1\
+                docker images \'b2\'e9\'bf\'b4\'d2\'d1\'cf\'c2\'d4\'d8\'be\'b5\'cf\'f1\
+                docker pull \'be\'b5\'cf\'f1\'c3\'fb  \'c0\'ad\'c8\'a1\'b2\'d6\'bf\'e2\'d6\'d0\'b5\'c4\'be\'b5\'cf\'f1\
+		  docker push  \'cd\'c6\'cb\'cd\'b1\'be\'b5\'d8\'be\'b5\'cf\'f1\
+dcocker container \'c8\'dd\'c6\'f7\'d2\'c0\'c0\'b5\'be\'b5\'cf\'f1\
+dcocker registry \'b2\'d6\'bf\'e2\
+\
+\'c8\'e7\'ba\'ce\'b9\'b9\'bd\'a8\'d2\'bb\'b8\'f6\'cb\'bd\'d3\'d0\'b5\'c4docker\'b2\'d6\'bf\'e2\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb2 #\cb1 \'b4\'b4\'bd\'a8\'c8\'dd\'c6\'f7\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2 \cf3 \cb4 \expnd0\expndtw0\kerning0
+docker create --name mark_tomcat\uc0\u65288 \u23481 \u22120 \u21517 \u65289  -p 8080(\u23487 \u20027 ):8080\u65288 \u34394 \u25311 \u65289  tomcat \u65288 \u38236 \u20687 \u21517 \u65289  
+\f1 \cf0 \cb2 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb2 #\cb2 \'cd\'a3\'d6\'b9\'c8\'dd\'c6\'f7 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2 \cf3 \cb4 \expnd0\expndtw0\kerning0
+docker stop 
+\f1 \cf0 \cb2 \kerning1\expnd0\expndtw0 \'c8\'dd\'c6\'f7\'c3\'fb\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb2 #\cb2 \'b2\'e9\'bf\'b4\'c8\'dd\'c6\'f7 \
+docker ps -a\
+\cb2 #\cb2 \'c9\'be\'b3\'fd\'c8\'dd\'c6\'f7 \
+docker rm \'c8\'dd\'c6\'f7\'c3\'fb   \
+#\'c8\'dd\'c6\'f7\'ba\'cd\'cb\'de\'d6\'f7\'bb\'fa\'b5\'c4\'b6\'cb\'bf\'da\'d3\'b3\'c9\'e4 \
+docker port c2adbc315971 8080  \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf5 \cb6 \expnd0\expndtw0\kerning0
+#\'b2\'e9\'bf\'b4\'c8\'dd\'c6\'f7pid
+\f3  \
+docker inspect -f \cf7 \cb2 \'93\cb6 \{\{.State.Pid\}\}\cb2 \'94\cf5 \cb6  
+\f1\fs24 \cf0 \cb2 \kerning1\expnd0\expndtw0 \'c8\'dd\'c6\'f7\'c3\'fb\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \cb2 #\cb2 \'bd\'f8\'c8\'eb\'c8\'dd\'c6\'f7 
+\f2\fs28 \cf5 \cb4 \expnd0\expndtw0\kerning0
+nsenter\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f3 \cf8 \cb9 nsenter\cf3  \cf10 --\cf8 target\cf3  
+\f1 \cf8 8652
+\f3 \cf3  \cf10 --\cf8 mount\cf3  \cf10 --\cf8 uts\cf3  \cf10 --\cf8 ipc\cf3  \cf10 --\cf8 net\cf3  \cf10 --\cf8 pid\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \cb2 \kerning1\expnd0\expndtw0 #
+\fs28 \cf8 \cb9 \expnd0\expndtw0\kerning0
+\'bd\'f8\'c8\'eb
+\f3 docker
+\f1 \'c8\'dd\'c6\'f7
+\f3 \cf8 \cb9 \
+\pard\pardeftab720\sl320\partightenfactor0
+\cf8 docker exec -it mark_tomcat3 /bin/bash  \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f2 \cf11 \cb12 #\uc0\u23558 \u39033 \u30446 \u25335 \u36125 \u21040 docker\u23481 \u22120 
+\f3 \cf8 \cb9 \
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f2 \cf11 \cb12 docker cp tomcat-users.xml mark_tomcat3:/usr/local/tomcat/conf   
+\f1\fs24 \cf0 \cb2 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\sl320\partightenfactor0
+\cf0 #\'bf\'bd\'b1\'b4\'d0\'c2\'be\'b5\'cf\'f1\
+\pard\pardeftab720\sl380\partightenfactor0
+
+\f2\fs28 \cf13 \cb14 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec13 docker commit -m \'93mark, docker\'94 -a \'93mark\'94 \\7f75d48a0808 mark/tomcat_helloword \
+\uc0\u35828 \u26126 \u65306 \u27492 \u22788 \u21629 \u20196 \u21644 {\field{\*\fldinst{HYPERLINK "http://lib.csdn.net/base/git"}}{\fldrslt \cf15 \strokec15 Git}}\uc0\u30340 \u21629 \u20196 svn\u30340 \u21629 \u20196 \u26377 \u20123 \u31867 \u20284 \u12290  docker commit \u26159 \u25552 \u20132 \u30340 \u24847 \u24605 ,\u31867 \u20284 \u21578 \u35785 svn\u26381 \u21153 \u22120 \u25105 \u35201 \u29983 \u25104 \u19968 \u20010 \u26032 \u30340 \u29256 \u26412 \u12290  \
+-m \uc0\u23601 \u26159 \u28155 \u21152 \u27880 \u37322 \u65292 -a\u26159 \u20316 \u32773 \u12290  \
+\'93\\\'94 \uc0\u21518 \u38754 \u36319 \u30340 \u26159  1.2\u30340 \u23481 \u22120 \u29615 \u22659 id \u35201 \u29983 \u25104 \u30340 \u38236 \u20687 \u30340 \u21517 \u31216  \
+\uc0\u23481 \u22120 \u30340 id\u65306 \u23601 \u26159 \u20320 \u27599 \u27425 \u36755 \u20837 \u21629 \u20196 \u34892 @\u21518 \u38754 \u30340 \u23383 \u31526  \
+\uc0\u20363 \u22914 \u65306 root@0b2616b0e5a8 \
+\uc0\u38236 \u20687 \u21517 \u31216 \u65306 hub\u30340 \u21517 \u31216 /\u38236 \u20687 \u21517 \u31216 \u65306 tag \
+#\uc0\u21019 \u24314 \u38236 \u20687 \
+docker build -t ouruser/sinatra:v2 . \
+docker build \uc0\u26159 docker\u21019 \u24314 \u38236 \u20687 \u30340 \u21629 \u20196  \
+-t \uc0\u26159 \u26631 \u35782 \u26032 \u24314 \u30340 \u38236 \u20687 \u23646 \u20110  ouruser\u30340  \
+sinatra\uc0\u26159 \u20179 \u24211 \u30340 \u21517 \u31216  \
+\uc0\u65306 v2 \u26159 tag \
+\'93.\'94\uc0\u26159 \u29992 \u26469 \u25351 \u26126  \u25105 \u20204 \u30340 \u20351 \u29992 \u30340 Dockerfile\u25991 \u20214 \u24403 \u21069 \u30446 \u24405 \u30340  
+\f3\fs24 \cf5 \cb2 \outl0\strokewidth0 \
+}
