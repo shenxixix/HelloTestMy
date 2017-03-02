@@ -1,7 +1,12 @@
 {\rtf1\ansi\ansicpg936\cocoartf1504
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 PingFangSC-Regular;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;\csgray\c100000;}
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 PingFangSC-Regular;\f2\fnil\fcharset0 MicrosoftYaHei;
+\f3\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red255\green255\blue255;\red38\green38\blue38;
+\red255\green255\blue255;\red0\green0\blue0;\red246\green246\blue246;\red210\green0\blue53;\red115\green0\blue2;
+\red109\green109\blue109;\red11\green84\blue83;}
+{\*\expandedcolortbl;\csgray\c100000;\cssrgb\c20000\c20000\c20000;\cssrgb\c100000\c100000\c100000;\cssrgb\c20000\c20000\c20000;
+\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;\cssrgb\c97255\c97255\c97255;\cssrgb\c86667\c6667\c26667;\cssrgb\c53333\c0\c0;
+\cssrgb\c50196\c50196\c50196\c4706;\cssrgb\c0\c40000\c40000;}
 \paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
@@ -15,9 +20,41 @@
 dcocker container \'c8\'dd\'c6\'f7\'d2\'c0\'c0\'b5\'be\'b5\'cf\'f1\
 dcocker registry \'b2\'d6\'bf\'e2\
 \
+\'c8\'e7\'ba\'ce\'b9\'b9\'bd\'a8\'d2\'bb\'b8\'f6\'cb\'bd\'d3\'d0\'b5\'c4docker\'b2\'d6\'bf\'e2\
 \
+\'b4\'b4\'bd\'a8\'c8\'dd\'c6\'f7\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 docker create --name mark_tomcat\uc0\u65288 \u23481 \u22120 \u21517 \u65289  -p 8080(\cf4 \cb5 \outl0\strokewidth0 \uc0\u23487 \u20027 \cf2 \cb3 \outl0\strokewidth0 \strokec2 ):8080\uc0\u65288 \u34394 \u25311 \u65289  tomcat \u65288 \u38236 \u20687 \u21517 \u65289  
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 \cf0 \
+\'cd\'a3\'d6\'b9\'c8\'dd\'c6\'f7 
+\f2 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 docker stop 
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \'c8\'dd\'c6\'f7\'c3\'fb\
+\'b2\'e9\'bf\'b4\'c8\'dd\'c6\'f7 docker ps -a\
+\'c9\'be\'b3\'fd\'c8\'dd\'c6\'f7 docker rm \'c8\'dd\'c6\'f7\'c3\'fb   \
+\'c8\'dd\'c6\'f7\'ba\'cd\'cb\'de\'d6\'f7\'bb\'fa\'b5\'c4\'b6\'cb\'bf\'da\'d3\'b3\'c9\'e4 docker port c2adbc315971 8080  \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf6 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 \'b2\'e9\'bf\'b4\'c8\'dd\'c6\'f7pid
+\f3  docker inspect -f \cf8 \cb1 \strokec8 \'93\cb7 \{\{.State.Pid\}\}\cb1 \'94\cf6 \cb7 \strokec6  
+\f1\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \'c8\'dd\'c6\'f7\'c3\'fb\
 \
+\'bd\'f8\'c8\'eb\'c8\'dd\'c6\'f7 
+\f2\fs28 \cf6 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 nsenter\
 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f3 \cf9 \cb10 \strokec9 nsenter\cf2 \strokec2  \cf11 \strokec11 --\cf9 \strokec9 target\cf2 \strokec2  
+\f1 \cf9 \strokec9 8652
+\f3 \cf2 \strokec2  \cf11 \strokec11 --\cf9 \strokec9 mount\cf2 \strokec2  \cf11 \strokec11 --\cf9 \strokec9 uts\cf2 \strokec2  \cf11 \strokec11 --\cf9 \strokec9 ipc\cf2 \strokec2  \cf11 \strokec11 --\cf9 \strokec9 net\cf2 \strokec2  \cf11 \strokec11 --\cf9 \strokec9 pid
+\f2 \cf6 \cb3 \strokec6 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
 }
