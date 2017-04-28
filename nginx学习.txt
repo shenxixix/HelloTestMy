@@ -1,0 +1,28 @@
+nginx 负载均衡、反向代理。安装简单，对网络要求低，Nginx工作在网络的7层，使用场景多，问题多，耗费流量，
+nginx支持重发请求、nginx没有现成的双机热备方案，所以跑在单机上还是风险较大
+对比产品：
+lvs 负载程度高、工作在网络的3-5层，对网络要求高，稳定，但需要多ip，不耗费流量，不支持重发请求
+haproxy
+nginx.conf 配置
+
+nginx 状态监控
+1、通过浏览器查看
+通过web界面查看时Nginx需要开启status模块，也就是安装Nginx时加上–with-http_stub_status_module然后配置Nginx.conf，在server点里面加入如下内容
+location /nginx_status {
+stub_status on;
+access_log off;
+allow 192.168.1.100;  访问IP
+deny all;
+}
+配置完后重新启动Nginx后我们可以通过浏览器访问http://localhost/status 查看
+2、Zabbix监控nginx性能
+
+nginx 静态和动态资源服务器，静态：直接指定系统目录，动态：ip和port
+
+$request_uri  指的是http://localhost:8080/url/method*中的url/method*
+
+echo_exec 使用第三方模块
+
+
+OpenResty OpenResty? 是一个基于 Nginx 与 Lua 的高性能 Web 平台，其内部集成了大量精良的 Lua 库、第三方模块以及大多数的依赖项。
+用于方便地搭建能够处理超高并发、扩展性极高的动态 Web 应用、Web 服务和动态网关。

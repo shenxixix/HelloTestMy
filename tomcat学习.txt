@@ -1,0 +1,9 @@
+1、jsper jsp解析引擎
+2、naming  tomcat数据源配置
+3、session 多个tomcat数据共享
+4、jmx tomcat监控
+5、jni java调用c++库
+6、websocket WebSocket规范，该规范使得能够实现在浏览器端和服务器端通过WebSocket协议进行双向通信。
+7、dbcp 连接池
+8、i18n 中文转码
+9、Realm tomcat应用的用户认证
