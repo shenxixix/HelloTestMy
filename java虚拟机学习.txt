@@ -1,0 +1,12 @@
+1、类加载器--类加载器加载class文件
+Bootstrap class loader -- 加载java API, 一般类是有C/C++实现
+Extension class loader -- 这个加载器加载出了基本API之外的一些拓展类，包括一些与安全性能相关的类
+System Class Loader -- 它加载应用程序中的类，也就是在你的classpath中配置的类
+User-Defined Class Loader -- 这是开发人员通过拓展ClassLoader类定义的自定义加载器，加载程序员定义的一些类
+
+2、加载流程
+Loading：文章前面介绍的类加载，将文件系统中的Class文件载入到JVM内存（运行数据区域）
+Verifying：检查载入的类文件是否符合Java规范和虚拟机规范。
+Preparing：为这个类分配所需要的内存，确定这个类的属性、方法等所需的数据结构。（Prepare a data structure that assigns the memory required by classes and indicates the fields, methods, and interfaces defined in the class.）
+Resolving：将该类常量池中的符号引用都改变为直接引用。（不是很理解）
+Initialing：初始化类的局部变量，为静态域赋值，同时执行静态初始化块。

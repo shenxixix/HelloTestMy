@@ -1,0 +1,12 @@
+游戏类型
+MOBA 多人在线竞技游戏
+SLG 模拟游戏
+
+数据类型
+JSON、protobuffer、xml
+
+网络通信
+mina、netty
+
+数据库
+sql、nosql、缓存redis\memcached
